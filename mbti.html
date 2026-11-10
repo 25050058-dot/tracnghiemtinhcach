@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Khám phá 16 nhóm tính cách với bài trắc nghiệm MBTI miễn phí." />
+    <title>Trắc nghiệm MBTI | Khai phá tiềm năng</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Điều hướng chính">
+        <a class="brand" href="index.html" aria-label="Khai phá tiềm năng - Trang chủ">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>Khai phá tiềm năng</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Mở menu</span>
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="primary-menu">
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link active" href="mbti.html">Danh mục test <span class="chevron">⌄</span></a>
+        </div>
+        <div class="nav-actions">
+          <a class="button button-gradient button-small" href="#mbti-levels">Bắt đầu ngay</a>
+          <button class="search-button" type="button" aria-label="Tìm kiếm">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.4"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mbti-page">
+      <div class="container">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Quay lại Trang Chủ</a>
+        <section class="mbti-intro" aria-labelledby="mbti-title">
+          <h1 id="mbti-title">Khám phá bản thân qua công cụ<br /><span>MBTI</span></h1>
+          <p>Nhận diện 16 nhóm tính cách đặc trưng, định hướng tài năng và khám phá điểm<br class="desktop-break" /> mạnh của riêng bạn.</p>
+          <div class="level-picker" id="mbti-levels">
+            <h2>Chọn cấp độ trắc nghiệm:</h2>
+            <div class="level-options" role="group" aria-label="Cấp độ trắc nghiệm">
+              <a class="level-option level-brief" href="test1.html"><span></span>Bản Rút Gọn (10 câu)</a>
+              <a class="level-option level-standard" href="test2.html"><span></span>Bản Tiêu Chuẩn (20 câu)</a>
+              <a class="level-option level-deep" href="test3.html"><span></span>Bản Chuyên Sâu (30 câu)</a>
+            </div>
+          </div>
+          <ul class="mbti-benefits" aria-label="Thông tin bài trắc nghiệm">
+            <li>✦ Hoàn toàn miễn phí</li>
+            <li>Không cần đăng ký</li>
+            <li>⚡ Kết quả tức thì</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

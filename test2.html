@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bài trắc nghiệm MBTI tiêu chuẩn gồm 20 câu hỏi." />
+    <title>MBTI tiêu chuẩn - 20 câu | Khai phá tiềm năng</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="quiz-page">
+    <header class="site-header">
+      <nav class="navigation container" aria-label="Điều hướng chính">
+        <a class="brand" href="index.html" aria-label="Khai phá tiềm năng - Trang chủ">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>Khai phá tiềm năng</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Mở menu</span><span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="primary-menu">
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link active" href="mbti.html">Danh mục test <span class="chevron">⌄</span></a>
+        </div>
+        <div class="nav-actions"><a class="button button-gradient button-small" href="mbti.html">Thoát bài test</a></div>
+      </nav>
+    </header>
+    <main class="quiz-main" data-quiz-level="20">
+      <div class="container quiz-layout">
+        <section class="question-list" data-question-list aria-label="Câu hỏi trắc nghiệm MBTI"></section>
+        <aside class="quiz-sidebar" aria-label="Tiến độ bài làm">
+          <div class="time-card"><span>Thời gian</span><strong>Vô thời hạn</strong></div>
+          <section class="navigator-card">
+            <div class="navigator-heading"><h2>Danh sách câu hỏi</h2><span><b data-answered-count>0</b>/<span data-total-count>20</span></span></div>
+            <div class="question-navigator" data-question-navigator aria-label="Chọn câu hỏi"></div>
+            <p class="navigator-hint"><span></span> Đã trả lời</p>
+          </section>
+          <button class="submit-quiz" type="button" data-submit-quiz>Nộp bài</button>
+        </aside>
+      </div>
+    </main>
+    <dialog class="quiz-dialog" data-quiz-dialog aria-labelledby="dialog-title">
+      <div class="dialog-content">
+        <span class="dialog-icon" aria-hidden="true">!</span>
+        <h2 id="dialog-title">Chưa hoàn thành bài làm</h2>
+        <p data-dialog-message></p>
+        <div class="dialog-actions">
+          <button class="dialog-secondary" type="button" data-dialog-cancel>Quay lại làm bài</button>
+          <button class="dialog-primary" type="button" data-dialog-confirm>Vẫn nộp bài</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
